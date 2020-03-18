@@ -2,7 +2,7 @@
 Directadmin 1.60.4 Nulled + Working License File ( Unlimited Account, Unlimited Domains )
 ```
 yum -y install nano wget perl
-wget https://raw.githubusercontent.com/puarudz/Directadmin-1.60.3-Nulled/master/setup.sh
+wget https://raw.githubusercontent.com/puarudz/Directadmin-1.60.4-Nulled/master/setup.sh
 chmod +x setup.sh
 ./setup.sh auto
 ```
