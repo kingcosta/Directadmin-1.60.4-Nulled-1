@@ -1,15 +1,11 @@
 # Directadmin-1.60.3-Nulled
 Directadmin 1.60.3 Nulled + Working License File ( Unlimited Account, Unlimited Domains )
-
-
-[root@sucuri ~]# yum -y install nano wget perl
-
-[root@sucuri ~]# wget https://raw.githubusercontent.com/LinuxGuard/Directadmin-1.60.3-Nulled/master/setup.sh
-
-[root@sucuri ~]# chmod +x setup.sh
-
-[root@sucuri ~]# ./setup.sh
-
+```
+yum -y install nano wget perl
+wget https://raw.githubusercontent.com/puarudz/Directadmin-1.60.3-Nulled/master/setup.sh
+chmod +x setup.sh
+./setup.sh
+```
 # Nhập ID và lic id con số bất kỳ bạn thích
 
 # Chú ý sau khi cài xong sẽ ko run được thì khai báo port cho nó lệnh
