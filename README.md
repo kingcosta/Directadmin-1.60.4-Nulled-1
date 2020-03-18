@@ -27,7 +27,7 @@ service network restart
 /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:100/' /usr/local/directadmin/conf/directadmin.conf
 service directadmin start
 ```
-# Nếu license hết hạn, vui thì chỉ cần chạy lệnh sau:
+# Nếu license hết hạn (đọc commit thấy update hạn mới), thì chỉ cần chạy lệnh sau:
 ```
 cd /usr/local/directadmin/conf/
 service directadmin stop
