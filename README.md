@@ -4,8 +4,9 @@ Directadmin 1.60.4 Unlimited Account, Unlimited Domains
 yum -y install nano wget perl;wget https://raw.githubusercontent.com/puarudz/Directadmin-1.60.4-Nulled/master/setup.sh;chmod +x setup.sh;./setup.sh
 ```
 # Nhập ID và lic id con số bất kỳ bạn thích
-
+# Enter ID and LICID is any number
 # Chú ý sau khi cài xong sẽ ko run được thì khai báo port cho nó lệnh
+# Note that after installation will not run, declare port give it command
 ```
 firewall-cmd --zone=public --add-port=2222/tcp --permanent
 firewall-cmd --zone=public --add-port=21/tcp --permanent
@@ -28,6 +29,7 @@ service network restart
 service directadmin start
 ```
 # Nếu license hết hạn (đọc commit thấy update hạn mới), thì chỉ cần chạy lệnh sau:
+# If the license expires (read commit new update term), then simply run the following command:
 ```
 cd /usr/local/directadmin/conf/
 service directadmin stop
@@ -44,7 +46,8 @@ service network restart
 /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:100/' /usr/local/directadmin/conf/directadmin.conf
 service directadmin start
 ```
-# Cách fix VPS không vào được mạng sau khi edit network :
+# Cách fix VPS không vào được mạng sau khi edit network:
+# How to fix VPS not on network after edit network
 Mở WinSCP lên, vào folder: `/etc/sysconfig/network-scripts/`
 
 Mở file `ifcfg-eth0:100` lên rồi sửa `IPADDR=27.77.94.91` thành ***IP VPS***. sao đó save lại,
