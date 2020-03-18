@@ -46,6 +46,9 @@ service directadmin start
 ```
 # Cách fix VPS không vào được mạng sau khi edit network :
 Mở WinSCP lên, vào folder: `/etc/sysconfig/network-scripts/`
-Mở fileifcfg-eth0:100 lên rồi sửa `IPADDR=27.77.94.91` thành *IP VPS*. sao đó save lại,
+
+Mở file `ifcfg-eth0:100` lên rồi sửa `IPADDR=27.77.94.91` thành ***IP VPS***. sao đó save lại,
+
 Chạy lệnh là OK: `service network restart`
-Lưu ý: không được restart DirectAdmin, nếu lỡ restart thì sửa *IP VPS* thành `IPADDR=27.77.94.91` lại. xong restart network, rồi restart DirectAdmin, xong lặp lại bước trên!
+
+Lưu ý: không được restart DirectAdmin, nếu lỡ restart thì sửa ***IP VPS*** thành `IPADDR=27.77.94.91` lại. xong restart network, rồi restart DirectAdmin, xong lặp lại bước trên!
