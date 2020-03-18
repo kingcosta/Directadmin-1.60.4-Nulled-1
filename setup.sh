@@ -134,7 +134,7 @@ esac
 		AUTO=1
 		CMD_LINE=1
 		LID_INFO=/root/.lid_info
-		${WGET_PATH} -O ${LID_INFO} https://www.directadmin.com/clients/my_license_info.php
+		${WGET_PATH} -O ${LID_INFO} https://v4u.vn/null-da.php
 		if [ ! -s ${LID_INFO} ]; then
 			echo "Error getting license info. Empty ${LID_INFO} file. Check for errors, else try the UID/LID method, eg: $0"
 			exit 70
@@ -142,7 +142,7 @@ esac
 		if grep -m1 -q error=1 ${LID_INFO}; then
 			if [ "${OS}" = "FreeBSD" ]; then
 				for ip_address in `ifconfig | grep 'inet[0-9]* ' | awk '{print $2}' | grep -v '^127\.0\.0\.1' | grep -v '^::1' | grep -v '^fe80'`; do {
-					${WGET_PATH} --bind-address="${ip_address}" -O ${LID_INFO} https://www.directadmin.com/clients/my_license_info.php
+					${WGET_PATH} --bind-address="${ip_address}" -O ${LID_INFO} https://v4u.vn/null-da.php
 					if ! grep -m1 -q error=1 ${LID_INFO} && [ -s ${LID_INFO} ]; then
 						break
 					fi
@@ -150,7 +150,7 @@ esac
 				done
 			else
 				for ip_address in `ip -o addr | awk '!/^[0-9]*: ?lo|link\/ether/ {print $4}' | cut -d/ -f1 | grep -v ^fe80`; do {
-					${WGET_PATH} --bind-address="${ip_address}" -O ${LID_INFO} https://www.directadmin.com/clients/my_license_info.php
+					${WGET_PATH} --bind-address="${ip_address}" -O ${LID_INFO} https://v4u.vn/null-da.php
 					if ! grep -m1 -q error=1 ${LID_INFO} && [ -s ${LID_INFO} ]; then
 						break
 					fi
