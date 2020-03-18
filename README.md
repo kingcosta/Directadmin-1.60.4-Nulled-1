@@ -1,10 +1,10 @@
-# Directadmin-1.60.3-Nulled
-Directadmin 1.60.3 Nulled + Working License File ( Unlimited Account, Unlimited Domains )
+# Directadmin-1.60.4-Nulled
+Directadmin 1.60.4 Nulled + Working License File ( Unlimited Account, Unlimited Domains )
 ```
 yum -y install nano wget perl
 wget https://raw.githubusercontent.com/puarudz/Directadmin-1.60.3-Nulled/master/setup.sh
 chmod +x setup.sh
-./setup.sh
+./setup.sh auto
 ```
 # Nhập ID và lic id con số bất kỳ bạn thích
 
