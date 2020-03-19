@@ -30,6 +30,7 @@ service directadmin start
 ```
 # Nếu license hết hạn (đọc commit thấy update hạn mới), thì chỉ cần chạy lệnh sau:
 # If the license expires (read commit new update term), then simply run the following command:
+# IF IPADDR in /etc/sysconfig/network-scripts/ifcfg-eth0:100 != 103.127.207.212 then EDIT TO 103.127.207.212
 ```
 rm -rf /usr/local/directadmin/conf/license.key
 wget -O /usr/local/directadmin/conf/license.key https://raw.githubusercontent.com/puarudz/DirectAdmin-1.59.5/master/license.key
