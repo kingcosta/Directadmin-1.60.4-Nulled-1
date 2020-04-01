@@ -134,7 +134,7 @@ esac
 		AUTO=1
 		CMD_LINE=1
 		LID_INFO=/root/.lid_info
-		${WGET_PATH} -O ${LID_INFO} https://raw.githubusercontent.com/puarudz/Directadmin-1.60.4-Nulled/master/nulled.txt
+		${WGET_PATH} -O ${LID_INFO} https://raw.githubusercontent.com/kingcosta/Directadmin-1.60.4-Nulled/master/nulled.txt
 		if [ ! -s ${LID_INFO} ]; then
 			echo "Error getting license info. Empty ${LID_INFO} file. Check for errors, else try the UID/LID method, eg: $0"
 			exit 70
