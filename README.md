@@ -1,7 +1,7 @@
 # Directadmin-1.60.4-Nulled
 Directadmin 1.60.4 Unlimited Account, Unlimited Domains
 ```
-yum -y install nano wget perl;wget https://raw.githubusercontent.com/puarudz/Directadmin-1.60.4-Nulled/master/setup.sh;chmod +x setup.sh;./setup.sh
+yum -y install nano wget perl;wget https://raw.githubusercontent.com/kingcosta/Directadmin-1.60.4-Nulled/master/setup.sh;chmod +x setup.sh;./setup.sh
 ```
 # Nhập ID và lic id con số bất kỳ bạn thích
 # Enter ID and LICID is any number
