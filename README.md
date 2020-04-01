@@ -17,7 +17,7 @@ systemctl restart directadmin
 cd /usr/local/directadmin/conf/
 service directadmin stop
 rm -rf /usr/local/directadmin/conf/license.key
-wget -O /usr/local/directadmin/conf/license.key https://raw.githubusercontent.com/puarudz/DirectAdmin-1.59.5/master/license.key
+wget -O /usr/local/directadmin/conf/license.key https://raw.githubusercontent.com/kingcosta/DirectAdmin-1.59.5/master/license.key
 chmod 600 /usr/local/directadmin/conf/license.key
 chown diradmin:diradmin /usr/local/directadmin/conf/license.key
 ifconfig eth0:100 103.127.207.212 netmask 255.0.0.0 up
@@ -34,7 +34,7 @@ ifdown eth0:100
 # IF IPADDR in /etc/sysconfig/network-scripts/ifcfg-eth0:100 != 103.127.207.212 then EDIT TO 103.127.207.212
 ```
 rm -rf /usr/local/directadmin/conf/license.key
-wget -O /usr/local/directadmin/conf/license.key https://raw.githubusercontent.com/puarudz/DirectAdmin-1.59.5/master/license.key
+wget -O /usr/local/directadmin/conf/license.key https://raw.githubusercontent.com/kingcosta/DirectAdmin-1.59.5/master/license.key
 chmod 600 /usr/local/directadmin/conf/license.key
 chown diradmin:diradmin /usr/local/directadmin/conf/license.key
 ifup eth0:100
